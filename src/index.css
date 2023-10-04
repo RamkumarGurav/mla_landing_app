@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Allura&family=Indie+Flower&family=Lato&family=Lobster&family=Merriweather&family=Montserrat:wght@400;900&family=Nunito:wght@700&family=Permanent+Marker&family=Playfair+Display&family=Poppins&family=Press+Start+2P&family=Righteous&family=Roboto&family=Titillium+Web:wght@900&family=Ubuntu&family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Indie+Flower&family=Lato&family=Lobster&family=Merriweather&family=Montserrat:wght@400;900&family=Nunito:wght@700&family=Noto+Sans+Kannada&&family=Noto+Serif+Kannada&family=Permanent+Marker&family=Playfair+Display&family=Poppins&family=Press+Start+2P&family=Righteous&family=Roboto&family=Titillium+Web:wght@900&family=Ubuntu&family=Yellowtail&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -63,6 +63,7 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
+  place-items: center;
 }
 
 .roboto {
@@ -91,6 +92,13 @@ a {
 .montserrat {
   font-family: "Montserrat", sans-serif;
 }
+
+.noto-serif-kan {
+  font-family: "Noto Serif Kannada", serif;
+}
+.noto-sans-kan {
+  font-family: "Noto Sans Kannada", sans-serif;
+}
 /* --------color .diants--------------  */
 
 .cg-primary {
@@ -112,8 +120,8 @@ a {
 .cg-purple {
   background-image: linear-gradient(135deg, #aa057e 10%, #3813c2 100%);
 }
-.cg-heading-safron{
-  background-image: linear-gradient( 135deg, #FDD819 10%, #E80505 100%);
+.cg-heading-safron {
+  background-image: linear-gradient(135deg, #fdd819 10%, #e80505 100%);
 }
 .cg-insta {
   background-image: linear-gradient(
@@ -396,148 +404,6 @@ a {
     background-color: white;
   }
 }
-/* //-------------------------------------------------------- */
-
-#header {
-  background-image: url("/IMG_20221126_101739-removebg-preview.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
-  background-attachment: fixed;
-}
-
-/* 
-.header-text {
-  margin-top: 16%;
-  font-size: 30px;
-}
-
-.header-text h1 {
-  font-size: 60px;
-  margin-top: 20px;
-}
-.header-text h1 span {
-  color: #ff004f;
-} */
-
-/* --------------about---------------- -- */
-
-#about {
-  /* padding: 80px 0; */
-  color: #ababab;
-}
-.row {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.about-col-1 {
-  flex-basis: 35%;
-}
-.about-col-1 img {
-  width: 100%;
-
-  background-color: #202020;
-  border-radius: 15px;
-}
-
-.about-col-2 {
-  flex-basis: 60%;
-}
-
-.subtitle {
-  color: #fff;
-  font-size: 60px;
-  font-weight: 600;
-}
-
-.tab-titles {
-  display: flex;
-  margin: 20px 0 40px;
-}
-
-.tab-links {
-  margin-right: 50px;
-  font-size: 1.5rem;
-  font-weight: 500;
-  cursor: pointer;
-  position: relative;
-}
-
-.tab-links::after {
-  content: "";
-  width: 0%;
-  height: 3px;
-  background-color: #ff004f;
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-  transition: 0.2s ease-in-out;
-}
-
-/* .tab-links:hover::after{
-    width: 100%;
-    transition: 0.2s ease-in-out;
-} */
-
-.tab-links.active-link::after {
-  width: 50%;
-  transition: 0.2s ease-in-out;
-}
-
-.tab-contents ul li {
-  list-style-type: none;
-  margin: 10px 0;
-}
-.tab-contents ul li span {
-  color: #ff004f;
-  font-size: 1rem;
-}
-
-.tab-contents {
-  display: none;
-}
-.tab-contents.active-tab {
-  display: block;
-}
-
-/* ------------------services-------------- */
-#services {
-  padding: 50px 0;
-}
-.services-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 50px;
-  margin-top: 50px;
-}
-.services-list div {
-  display: block;
-  background-color: #202020;
-  padding: 40px;
-  font-size: 13px;
-  font-weight: 300;
-  border-radius: 10px;
-  transition: 0.2s ease-in-out;
-}
-
-.services-list div i {
-  font-size: 50px;
-  margin-bottom: 30px;
-}
-
-.services-list div h1 {
-  font-size: 30px;
-  font-weight: 500;
-  margin-bottom: 15px;
-}
-.services-list div:hover {
-  background-color: #ff004f;
-  transform: translateY(-15px);
-
-  transition: 0.2s ease-in-out;
-}
 
 .insta-bg {
   background: radial-gradient(
@@ -566,258 +432,6 @@ a {
   /* background: linear-gradient(109.5deg, rgb(125, 184, 231) 9.4%,rgb(29, 199, 221) 50.4%, rgb(7, 134, 207) 68.4%); */
 }
 
-/* //---------------------skills------------------------- */
-.progress-container {
-  width: 80%;
-  height: 20px;
-  border-radius: 3rem;
-  background-color: rgba(114, 114, 114, 0.521);
-  border: 2px solid black;
-  overflow: hidden;
-}
-
-.progress-container .progress {
-  position: relative;
-  width: 0;
-  height: 100%;
-  margin-left: 1px;
-  border-radius: 3rem 0 0 3rem;
-  /* //for making only left border radius round */
-  background-color: #ff004f;
-}
-
-.html-skills .progress-container .progress {
-  animation: html-progress-bar 8s infinite cubic-bezier(1, 0, 0, 1);
-  /* //animation: keyframe-Name animation-duration total-animation-duration slow-speed-effect  */
-}
-.css-skills .progress-container .progress {
-  animation: css-progress-bar 8s infinite cubic-bezier(1, 0, 0, 1);
-  /* //animation: keyframe-Name animation-duration total-animation-duration slow-speed-effect  */
-}
-.javascript-skills .progress-container .progress {
-  animation: javascript-progress-bar 8s infinite cubic-bezier(1, 0, 0, 1);
-  /* //animation: keyframe-Name animation-duration total-animation-duration slow-speed-effect  */
-}
-.typescript-skills .progress-container .progress {
-  animation: javascript-progress-bar 8s infinite cubic-bezier(1, 0, 0, 1);
-  /* //animation: keyframe-Name animation-duration total-animation-duration slow-speed-effect  */
-}
-.nodejs-skills .progress-container .progress {
-  animation: nodejs-progress-bar 8s infinite cubic-bezier(1, 0, 0, 1);
-  /* //animation: keyframe-Name animation-duration total-animation-duration slow-speed-effect  */
-}
-
-.reactjs-skills .progress-container .progress {
-  animation: reactjs-progress-bar 8s infinite cubic-bezier(1, 0, 0, 1);
-  /* //animation: keyframe-Name animation-duration total-animation-duration slow-speed-effect  */
-}
-.nextjs-skills .progress-container .progress {
-  animation: nextjs-progress-bar 8s infinite cubic-bezier(1, 0, 0, 1);
-  /* //animation: keyframe-Name animation-duration total-animation-duration slow-speed-effect  */
-}
-
-.java-skills .progress-container .progress {
-  animation: java-progress-bar 8s infinite cubic-bezier(1, 0, 0, 1);
-  /* //animation: keyframe-Name animation-duration total-animation-duration slow-speed-effect  */
-}
-.springboot-skills .progress-container .progress {
-  animation: springboot-progress-bar 8s infinite cubic-bezier(1, 0, 0, 1);
-  /* //animation: keyframe-Name animation-duration total-animation-duration slow-speed-effect  */
-}
-.mongodb-skills .progress-container .progress {
-  animation: mongodb-progress-bar 8s infinite cubic-bezier(1, 0, 0, 1);
-  /* //animation: keyframe-Name animation-duration total-animation-duration slow-speed-effect  */
-}
-.mysql-skills .progress-container .progress {
-  animation: mysql-progress-bar 8s infinite cubic-bezier(1, 0, 0, 1);
-  /* //animation: keyframe-Name animation-duration total-animation-duration slow-speed-effect  */
-}
-
-@keyframes html-progress-bar {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 95%;
-  }
-}
-@keyframes css-progress-bar {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 90%;
-  }
-}
-@keyframes javascript-progress-bar {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 85%;
-  }
-}
-@keyframes typescript-progress-bar {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 85%;
-  }
-}
-@keyframes nodejs-progress-bar {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 85%;
-  }
-}
-@keyframes reactjs-progress-bar {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 80%;
-  }
-}
-@keyframes nextjs-progress-bar {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
-}
-
-@keyframes java-progress-bar {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 40%;
-  }
-}
-@keyframes springboot-progress-bar {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 30%;
-  }
-}
-@keyframes mongodb-progress-bar {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 80%;
-  }
-}
-@keyframes mysql-progress-bar {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 60%;
-  }
-}
-/* --------------------contact me -------------- */
-#contact {
-  display: block;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.row {
-  display: flex;
-  justify-content: space-between;
-  /* align-items: center; */
-  flex-wrap: wrap;
-}
-
-/* .contact-left {
-  flex-basis: 35%;
-}
-
-.contact-right {
-  flex-basis: 60%;
-}
-
-.contact-left h1 {
-  margin-bottom: 10px;
-} */
-/* .contact-left p i {
-  margin-right: 10px;
-  font-size: 1rem;
-  color: #ff004f;
-  display: inline;
-}
-.contact-left p {
-  margin-top: 30px;
-  font-size: 1rem;
-} */
-
-.social-icons {
-  margin-top: 30px;
-}
-.social-icons a {
-  margin-right: 15px;
-  text-decoration: none;
-  color: #ababab;
-  font-size: 2rem;
-  transition: opacity 0.5s;
-  display: inline-block;
-}
-.social-icons a:hover {
-  color: #ff004f;
-  transform: translateY(-5px);
-}
-
-.btn.btn2 {
-  display: inline-block;
-  background-color: #ff004f;
-}
-.contact-right form {
-  width: 100%;
-}
-
-form input,
-form textarea {
-  width: 100%;
-  border: 0;
-  outline: none;
-  background: #202020;
-  padding: 15px;
-  margin: 15px 0;
-  color: #fff;
-  font-size: 1rem;
-  border-radius: 6px;
-}
-/* form .btn2 {
-  padding: 14px 60px;
-  font-size: 1rem;
-  margin-top: 20px;
-  cursor: pointer;
-} */
-
-#msg {
-  color: #61b752;
-  margin-top: -40px;
-  display: block;
-}
-
-#contact .row {
-  margin-bottom: 20px;
-}
-.copyright {
-  width: 100%;
-  text-align: center;
-  padding: 25px 0;
-  background: #262626;
-  font-weight: 300;
-}
-
 /* At last you have to copy these css styles from here ,Create a CSS file and paste it and import the file */
 
 /* Also you can customize these css styles*/
@@ -839,4 +453,17 @@ form textarea {
 .swiper-slide img {
   display: block;
   width: 100%;
+}
+
+.logo {
+  position: relative; /* Create a positioning context for the pseudo-element */
+
+  /* background: #f8f5f6a4; */
+  /* fallback colour. Make sure this is just one solid colour. */
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+
+  background: url("https://logos-world.net/wp-contenhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtpeNBqyBWGZ8EtCl1SemBLc3B-wDrFbBQ6A&usqp=CAUt/uploads/2022/06/BJP-Symbol.png")
+    no-repeat cover; /* The least supported option. */
 }

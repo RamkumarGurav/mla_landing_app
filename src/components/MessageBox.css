@@ -1,0 +1,10 @@
+/* .message-box input:focus,
+textarea:focus {
+  background-color: white;
+  border: 2px solid orange;
+}
+
+.message-box textarea:focus {
+  background-color: white;
+  border: 2px solid orange;
+} */

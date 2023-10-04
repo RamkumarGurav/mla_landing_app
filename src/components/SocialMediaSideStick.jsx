@@ -36,7 +36,7 @@ const SocialMediaSideStick = () => {
       <div className={`${isOpen ? " " : "hidden"} flex flex-col item-center`}>
         {/* <!-- Facebook --> */}
         <a
-          href="https://www.google.com"
+          href="https://www.facebook.com/profile.php?id=100063928831528"
           className="py-4 px-4 bg-blue-600 flex justify-center items-center "
           target="_blank"
           rel="noreferrer"
@@ -48,7 +48,7 @@ const SocialMediaSideStick = () => {
           />
         </a>
         <a
-          href="https://www.google.com"
+          href="https://www.facebook.com/profile.php?id=100063928831528"
           className="py-4 px-4 cg-insta"
           target="_blank"
           rel="noreferrer"
@@ -56,11 +56,11 @@ const SocialMediaSideStick = () => {
           <BiLogoInstagramAlt
             size={20}
             color={"white"}
-            className=" cursor-pointer z-50 " 
+            className=" cursor-pointer z-50 "
           />
         </a>
         <a
-          href="https://www.google.com"
+          href="https://www.facebook.com/profile.php?id=100063928831528"
           className="py-4 px-4 bg-gray-900"
           target="_blank"
           rel="noreferrer"
@@ -73,7 +73,7 @@ const SocialMediaSideStick = () => {
         </a>
 
         <a
-          href="https://www.google.com"
+          href="https://www.facebook.com/profile.php?id=100063928831528"
           className="py-4 px-4  yt-bg "
           target="_blank"
           rel="noreferrer"

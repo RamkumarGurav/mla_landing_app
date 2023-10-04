@@ -1,6 +1,6 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import "./Hero.css";
+import "./Gallery.css";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -8,9 +8,16 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import Heading from "./Heading";
 
 // if you want to use array
 const slide_imgs = [
+  "https://scontent.fblr3-2.fna.fbcdn.net/v/t39.30808-6/383228587_752584523549169_3771284048980383120_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5614bc&_nc_ohc=1McUVozQbPYAX9mzgPs&_nc_ht=scontent.fblr3-2.fna&oh=00_AfDwCBNn0m_PCO_Q4YiD8bvsfKjmI66NCCHJaLnPCQrE3A&oe=6521A588",
+  "https://scontent.fblr3-2.fna.fbcdn.net/v/t39.30808-6/383344486_752549220219366_8584838563983568917_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5614bc&_nc_ohc=ytjBYAbnUQ8AX-ENOGr&_nc_ht=scontent.fblr3-2.fna&oh=00_AfBJkEopb768N1Ow38nqkfp36faOBt4uQ3e_ZCbyOV3jrQ&oe=65231124",
+  "https://scontent.fblr3-3.fna.fbcdn.net/v/t39.30808-6/381341121_747543524053269_4493128946389866333_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5614bc&_nc_ohc=pDmJ8SnE1ScAX9Mm3qy&_nc_ht=scontent.fblr3-3.fna&oh=00_AfAqWfL5Wb5uYXwMIbuGFNmdYBJQGhjf0W97kA1JLsgJqA&oe=6521FF97",
+  "https://scontent.fblr3-2.fna.fbcdn.net/v/t39.30808-6/383228587_752584523549169_3771284048980383120_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5614bc&_nc_ohc=1McUVozQbPYAX9mzgPs&_nc_ht=scontent.fblr3-2.fna&oh=00_AfDwCBNn0m_PCO_Q4YiD8bvsfKjmI66NCCHJaLnPCQrE3A&oe=6521A588",
+  "https://scontent.fblr3-2.fna.fbcdn.net/v/t39.30808-6/383344486_752549220219366_8584838563983568917_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5614bc&_nc_ohc=ytjBYAbnUQ8AX-ENOGr&_nc_ht=scontent.fblr3-2.fna&oh=00_AfBJkEopb768N1Ow38nqkfp36faOBt4uQ3e_ZCbyOV3jrQ&oe=65231124",
+  "https://scontent.fblr3-3.fna.fbcdn.net/v/t39.30808-6/381341121_747543524053269_4493128946389866333_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5614bc&_nc_ohc=pDmJ8SnE1ScAX9Mm3qy&_nc_ht=scontent.fblr3-3.fna&oh=00_AfAqWfL5Wb5uYXwMIbuGFNmdYBJQGhjf0W97kA1JLsgJqA&oe=6521FF97",
   "https://scontent.fblr3-2.fna.fbcdn.net/v/t39.30808-6/383228587_752584523549169_3771284048980383120_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5614bc&_nc_ohc=1McUVozQbPYAX9mzgPs&_nc_ht=scontent.fblr3-2.fna&oh=00_AfDwCBNn0m_PCO_Q4YiD8bvsfKjmI66NCCHJaLnPCQrE3A&oe=6521A588",
   "https://scontent.fblr3-2.fna.fbcdn.net/v/t39.30808-6/383344486_752549220219366_8584838563983568917_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5614bc&_nc_ohc=ytjBYAbnUQ8AX-ENOGr&_nc_ht=scontent.fblr3-2.fna&oh=00_AfBJkEopb768N1Ow38nqkfp36faOBt4uQ3e_ZCbyOV3jrQ&oe=65231124",
   "https://scontent.fblr3-3.fna.fbcdn.net/v/t39.30808-6/381341121_747543524053269_4493128946389866333_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5614bc&_nc_ohc=pDmJ8SnE1ScAX9Mm3qy&_nc_ht=scontent.fblr3-3.fna&oh=00_AfAqWfL5Wb5uYXwMIbuGFNmdYBJQGhjf0W97kA1JLsgJqA&oe=6521FF97",
@@ -20,18 +27,35 @@ const slide_imgs = [
   "https://scontent.fblr3-2.fna.fbcdn.net/v/t39.30808-6/380247209_745658757575079_1151277427702687453_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5614bc&_nc_ohc=cOKBYBmHuQYAX8kL6a1&_nc_ht=scontent.fblr3-2.fna&oh=00_AfAT8xjrruOyRVNcszpOjt8su8RpxfdMFLZJP7ZQiwbtOw&oe=6521FC66https://scontent.fblr3-2.fna.fbcdn.net/v/t39.30808-6/380247209_745658757575079_1151277427702687453_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5614bc&_nc_ohc=cOKBYBmHuQYAX8kL6a1&_nc_ht=scontent.fblr3-2.fna&oh=00_AfAT8xjrruOyRVNcszpOjt8su8RpxfdMFLZJP7ZQiwbtOw&oe=6521FC66",
 ];
 
-const Hero = () => {
+const GallerySlider = () => {
   return (
-    <div>
+    <div className="my-4" id="gallery">
+      <Heading kan="ಗ್ಯಾಲರಿ" en="GALLERY" />
+
       <Swiper
+        slidesPerView={1}
         spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
         pagination={{
           clickable: true,
+        }}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        }}
+        centeredSlides={true}
+        autoplay={{
+          delay: 4500,
+          disableOnInteraction: false,
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
@@ -55,4 +79,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default GallerySlider;

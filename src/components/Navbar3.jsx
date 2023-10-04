@@ -18,12 +18,12 @@ const Navbar3 = () => {
   };
 
   return (
-    <header className="bg-[#f5871f] shadow-xl w-full sticky top-0 ">
+    <header className="bg-[#f5871f] shadow-xl w-full sticky top-0 z-[100]">
       <div className="flex flex-col gap-5 lg:flex-row lg:justify-between lg:items-center ">
         <div className="py-5 px-[2vmax] flex bg-[#f5871f] justify-between items-center z-[50]">
-          <Link
-            to="/"
-            className=" px-2 flex items-center font-bold rounded-2xl  ubuntu text-[#f5871f] bg-white "
+          <a
+            href="/"
+            className=" px-2 flex items-center font-bold rounded-2xl  ubuntu text-[#f5871f] logo bg-white"
           >
             <div className="flex items-center space-x-2 ">
               <img
@@ -38,7 +38,7 @@ const Navbar3 = () => {
                 <p className="no whitespace-nowrap">-ಶಾಸಕರು,ಜಮಖಂಡಿ</p>
               </span>
             </div>
-          </Link>
+          </a>
 
           {open ? (
             <AiOutlineClose
@@ -64,27 +64,30 @@ const Navbar3 = () => {
               : "top-[-500px] "
           } lg:flex-row lg:justify-between lg:items-center lg:w-[70%] lg:p-0 lg:shadow-none left-0 z-1`}
         >
-          <Link to="/tests" className="nav_link">
+          <a href="/" className="nav_link text-black">
             ಹೋಮ್
-          </Link>
+          </a>
 
-          <Link to="/tests" className="nav_link">
+          <a href="#intro" className="nav_link">
             ಕುರಿತು
-          </Link>
-          <Link to="/tests" className="nav_link">
+          </a>
+          <a href="#devProgs" className="nav_link">
             ಅಭಿವೃದ್ಧಿಗಳು
-          </Link>
-          <Link to="/tests" className="nav_link">
+          </a>
+          <a href="#media" className="nav_link">
             ಮಾಧ್ಯಮ
-          </Link>
-          <Link to="/tests" className="nav_link">
+          </a>
+          <a href="#gallery" className="nav_link">
             ಗ್ಯಾಲರಿ
-          </Link>
-          <Link to="/tests" className="nav_link flex justify-center outline-none rounded-sm px-5">
-            <p className="bg-blue-600 p-2 px-6 w-fit hover:bg-white ">
+          </a>
+          <a
+            href="#messages"
+            className=" w-full flex justify-center outline-none rounded-sm px-5"
+          >
+            <p className="nav_link bg-[#2CA9DD] p-2 px-6 w-fit hover:bg-white rounded-md ">
               ದೂರುಗಳು/ಸಲಹೆಗಳು
             </p>
-          </Link>
+          </a>
         </div>
       </div>
       {/* <div className="w-full nav-bg-b py-[2px]"></div> */}
