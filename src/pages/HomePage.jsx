@@ -1,4 +1,4 @@
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 // import logo from "../assets/images/mlaImgRm1.png";
 import Hero from "../components/Hero";
 import HeroIntro from "../components/HeroIntro";
