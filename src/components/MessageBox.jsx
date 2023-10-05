@@ -16,11 +16,9 @@ const MessageBox = () => {
     }));
   };
 
-  console.log(messageDetails);
   const handleSubmmit = (e) => {
     let tempData = messageDetails;
     e.preventDefault();
-    console.log(messageDetails);
     setMessageDetails(initMessageDetails);
     alert(
       `${tempData.first_name} ${tempData.last_name} ,Thank You for your response`

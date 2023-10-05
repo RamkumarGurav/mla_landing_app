@@ -19,11 +19,9 @@ export default function JoinFormModal() {
     }));
   };
 
-  console.log(messageDetails);
   const handleSubmmit = (e) => {
     let tempData = messageDetails;
     e.preventDefault();
-    console.log(messageDetails);
     setMessageDetails(initMessageDetails);
     alert(`${tempData.name}  ,Thank You for your response`);
   };
