@@ -18,12 +18,12 @@ const Navbar3 = () => {
   };
 
   return (
-    <header className="bg-[#f5871f] shadow-xl w-full sticky top-0 z-[100]">
+    <header className=" bg-[#f5871f] shadow-xl w-full sticky top-0 z-[100]">
       <div className="flex flex-col gap-5 lg:flex-row lg:justify-between lg:items-center ">
         <div className="py-5 px-[2vmax] flex bg-[#f5871f] justify-between items-center z-[50]">
           <a
             href="/"
-            className=" px-2 flex items-center font-bold rounded-2xl  ubuntu text-[#f5871f] logo bg-white"
+            className=" px-2 flex items-center font-medium  rounded-2xl  ubuntu text-[#f5871f] logo bg-white"
           >
             <div className="flex items-center space-x-2 ">
               <img
@@ -31,11 +31,11 @@ const Navbar3 = () => {
                 alt="Logo"
                 className="h-20 w-20" // Adjust the height and width according to your logo size
               />
-              <span className=" text-sm sm:text-lg  font-bold ml-2">
-                <p className="underline no whitespace-nowrap underline-offset-2 mb-2">
+              <span className=" text-sm sm:text-lg  font-medium  ml-2">
+                <p className="underline no whitespace-nowrap underline-offset-2 mb-2 noto-sans-kan">
                   ಜಗದೀಶ ಗುಡಗುಂಟಿ
                 </p>
-                <p className="no whitespace-nowrap">-ಶಾಸಕರು,ಜಮಖಂಡಿ</p>
+                <p className="no whitespace-nowrap noto-sans-kan">-ಶಾಸಕರು,ಜಮಖಂಡಿ</p>
               </span>
             </div>
           </a>

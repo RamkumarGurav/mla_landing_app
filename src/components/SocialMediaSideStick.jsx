@@ -11,11 +11,13 @@ const SocialMediaSideStick = () => {
   };
 
   return (
-    <div className="fixed left-0 top-1/3 z-50 w-[50px]  bg-transparent flex flex-col  rounded-tr-xl rounded-br-xl overflow-hidden">
+    <div className="fixed left-0 top-1/3 z-50  bg-transparent flex flex-col items-start   overflow-hidden ">
       {/* <!-- Social Sharing Bar --> */}
 
       <button
-        className="bg-black flex justify-center items-center py-1 "
+        className={`bg-gray-800 py-2 px-4 rounded-tr-xl   flex justify-center items-center  ${
+          !isOpen && "rounded-br-xl"
+        }`}
         onClick={handleOpen}
       >
         {isOpen ? (
@@ -33,23 +35,24 @@ const SocialMediaSideStick = () => {
           />
         )}
       </button>
-      <div className={`${isOpen ? " " : "hidden"} flex flex-col item-center`}>
+      <div className={`${isOpen ? " " : "hidden"} flex flex-col items-start`}>
         {/* <!-- Facebook --> */}
         <a
           href="https://www.facebook.com/profile.php?id=100063928831528"
-          className="py-4 px-4 bg-blue-600 flex justify-center items-center "
+          className="social_link py-4 px-4 bg-blue-600   "
           target="_blank"
           rel="noreferrer"
         >
           <RiFacebookFill
             size={20}
             color={"white"}
-            className=" cursor-pointer z-50"
+            className="m-auto cursor-pointer z-50 "
           />
         </a>
+
         <a
           href="https://www.facebook.com/profile.php?id=100063928831528"
-          className="py-4 px-4 cg-insta"
+          className="social_link py-4 px-4 cg-insta"
           target="_blank"
           rel="noreferrer"
         >
@@ -61,7 +64,7 @@ const SocialMediaSideStick = () => {
         </a>
         <a
           href="https://www.facebook.com/profile.php?id=100063928831528"
-          className="py-4 px-4 bg-gray-900"
+          className="social_link py-4 px-4 bg-gray-900 "
           target="_blank"
           rel="noreferrer"
         >
@@ -74,7 +77,7 @@ const SocialMediaSideStick = () => {
 
         <a
           href="https://www.facebook.com/profile.php?id=100063928831528"
-          className="py-4 px-4  yt-bg "
+          className="social_link py-4 px-4  rounded-br-xl yt-bg "
           target="_blank"
           rel="noreferrer"
         >

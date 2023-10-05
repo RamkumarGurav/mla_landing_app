@@ -1,6 +1,7 @@
 import Heading from "./Heading";
 import logo from "../assets/images/mlaImg1.webp";
 import "./HeroIntro.css";
+import JoinFormModal from "./JoinFormModal";
 
 const HeroIntro = () => {
   const points = [
@@ -9,8 +10,11 @@ const HeroIntro = () => {
     "ಕ್ಷೇತ್ರದ ವಿದ್ಯಾರ್ಥಿಗಳ ಭವಿಷ್ಯವನ್ನು ಅದ್ಭುತವಾಗಿ ರೂಪಿಸಲು IAS/KAS/NEET/CET/IIT ನಂತಹ ಪ್ರವೇಶ ಪರೀಕ್ಷೆಗಳನ್ನು ಎದುರಿಸಲು ಉಚಿತ ತರಬೇತಿ ಕೇಂದ್ರವನ್ನು ನನ್ನ ಕ್ಷೇತ್ರದಲ್ಲಿ ಪ್ರಾರಂಭ ಮಾಡಬೇಕೆಂಬುದು ನನ್ನ ಗುರಿ.",
     "ಇಡೀ ರಾಷ್ಟ್ರಕ್ಕೆ ಅನ್ನ ನೀಡುವವರು ರೈತರು. ಆತ್ಮಹತ್ಯೆಯಂತಹ ಪ್ರಕರಣಗಳನ್ನು ತಡೆಗಟ್ಟಲು ರೈತರನ್ನು ಸಶಕ್ತರನ್ನಾಗಿಸುವುದು ಹಾಗೂ ನೀರಾವರಿಯಂತಹ ಯೋಜನೆಗಳನ್ನು ಜಾರಿಗೆ ತರುವುದು ನನ್ನ ಪ್ರಮುಖ ಉದ್ದೇಶ.",
   ];
+
+
+
   return (
-    <div className="noto-sans-kan  " id="intro">
+    <div className="  " id="intro">
       <Heading
         kan="ಒಬ್ಬ ವ್ಯಕ್ತಿಯ ದೂರದೃಷ್ಟಿ ಕನಸನ್ನು ನನಸುಗೊಳಿಸಬಲ್ಲದು"
         en="One Man's Vision Can Turn Dreams Into Reality"
@@ -26,7 +30,7 @@ const HeroIntro = () => {
             />
           </div>
         </div>
-        <div className="flex justify-between flex-col  ">
+        <div className="flex  justify-between flex-col  ">
           <h2 className="text-2xl font-bold my-4">
             <span className="text-orange-600 ">
               ಜಗದೀಶ &zwnj; ಗುಡಗುಂಟಿ&zwnj;
@@ -34,7 +38,7 @@ const HeroIntro = () => {
             - ದಣಿವರಿಯದ ನಾಯಕನಿಗೆ ಸೇವೆಯೇ ಕಾಯಕ
           </h2>
 
-          <p className="font-semibold text-base mb-2">
+          <p className="font-semibold  text-base mb-2">
             ನಿಮ್ಮ ಮನೆ ಮಗ ಜಗದೀಶ ಗುಡಗುಂಟಿ, ಜಮಖಂಡಿ ವಿಧಾನಸಭಾ ಕ್ಷೇತ್ರದಿಂದ ಸ್ಪರ್ಧಿಸಿ
             ನಿಮ್ಮ ಆರ್ಶೀವಾದದಿಂದ ಶಾಸಕನಾಗಿ ನನ್ನ ಜಮಖಂಡಿ ಜನರ ಸೇವೆ ಮಾಡುವ ಸದಾವಕಾಶ
             ನನ್ನದಾಗಿದೆ. ನಿಮ್ಮ ನಂಬಿಕೆ, ಭರವಸೆ, ಪ್ರೀತಿ ಮತ್ತು ವಿಶ್ವಾಸಕ್ಕೆ ನಾನು
@@ -79,12 +83,8 @@ const HeroIntro = () => {
           </ul> */}
 
           <div className="flex justify-center items-center">
-            <button
-              type="button"
-              className="text-white bg-[#f5871f] hover:bg-[#ff891b]   rounded-lg text-lg font-bold px-5 py-2.5 mr-2 mb-2 focus:outline-none w-[80%] mt-4"
-            >
-              ನನ್ನೊಂದಿಗೆ ಕೈ ಜೋಡಿಸಿ
-            </button>
+          
+            <JoinFormModal/>
           </div>
         </div>
       </section>

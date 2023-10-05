@@ -6,7 +6,7 @@
 
 @layer components {
   .nav_link {
-    @apply text-lg  font-bold text-center w-full lg:w-fit relative text-white hover:text-black duration-300;
+    @apply text-lg  font-medium text-center w-full lg:w-fit relative text-white hover:text-black duration-300 noto-sans-kan;
   }
 }
 
@@ -48,6 +48,7 @@ input[type="number"] {
 body {
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
+
   /* background-color: #e7e6e6; */
 }
 
@@ -467,3 +468,25 @@ a {
   background: url("https://logos-world.net/wp-contenhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtpeNBqyBWGZ8EtCl1SemBLc3B-wDrFbBQ6A&usqp=CAUt/uploads/2022/06/BJP-Symbol.png")
     no-repeat cover; /* The least supported option. */
 }
+
+/* //overinding popup contetn  */
+.popup-content {
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  .popup-content {
+    border-radius: 1rem;
+    width: 90%;
+  }
+}
+
+/* .social_link {
+  transition:width 2s ease-in-out;
+
+}
+
+.social_link:hover {
+  border-radius: 0 2rem 2rem 0;
+  width:150px;
+} */
