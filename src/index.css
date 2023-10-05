@@ -490,3 +490,12 @@ a {
   border-radius: 0 2rem 2rem 0;
   width:150px;
 } */
+
+#nav_logo {
+  background: linear-gradient(
+    rgba(54, 1, 1, 0.466),
+    rgba(54, 2, 2, 0.514)
+  ),url("https://t4.ftcdn.net/jpg/05/49/93/81/360_F_549938156_jN2p7d3fDUdEwNtfq47oQUDPoMozgiSE.jpg")
+    no-repeat center;
+  background-size: cover;
+}

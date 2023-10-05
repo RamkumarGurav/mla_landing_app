@@ -9,7 +9,9 @@ import "swiper/css/pagination";
 // import required modules
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import Heading from "./Heading";
+import { useState, useCallback } from "react";
 
+import ImageViewer from "react-simple-image-viewer";
 // if you want to use array
 const slide_imgs = [
   "https://scontent.fblr3-2.fna.fbcdn.net/v/t39.30808-6/383228587_752584523549169_3771284048980383120_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5614bc&_nc_ohc=1McUVozQbPYAX9mzgPs&_nc_ht=scontent.fblr3-2.fna&oh=00_AfDwCBNn0m_PCO_Q4YiD8bvsfKjmI66NCCHJaLnPCQrE3A&oe=6521A588",
@@ -28,6 +30,19 @@ const slide_imgs = [
 ];
 
 const GallerySlider = () => {
+  const [currentImage, setCurrentImage] = useState(0);
+  const [isViewerOpen, setIsViewerOpen] = useState(false);
+
+  const openImageViewer = useCallback((index) => {
+    setCurrentImage(index);
+    setIsViewerOpen(true);
+  }, []);
+
+  const closeImageViewer = () => {
+    setCurrentImage(0);
+    setIsViewerOpen(false);
+  };
+
   return (
     <div className="my-4" id="gallery">
       <Heading kan="ಗ್ಯಾಲರಿ" en="GALLERY" />
@@ -68,13 +83,25 @@ const GallerySlider = () => {
                 <img
                   src={img_url}
                   alt="Logo"
-                  className=" " // Adjust the height and width according to your logo size
+                  onClick={() => openImageViewer(i)}
+                  className="cursor-pointer " // Adjust the height and width according to your logo size
                 />
               </div>
             </SwiperSlide>
           );
         })}
       </Swiper>
+      {isViewerOpen && (
+        <ImageViewer
+          src={slide_imgs}
+          currentIndex={currentImage}
+          onClose={closeImageViewer}
+          backgroundStyle={{
+            backgroundColor: "rgba(0,0,0,0.9)",
+            zIndex: 999,
+          }}
+        />
+      )}
     </div>
   );
 };
