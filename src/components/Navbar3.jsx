@@ -20,12 +20,13 @@ const Navbar3 = () => {
   return (
     <header className=" bg-[#f5871f] shadow-xl w-full sticky top-0 z-[100]">
       <div className="flex flex-col gap-5 lg:flex-row lg:justify-between lg:items-center ">
-        <div className="py-5 px-[2vmax] flex bg-[#f5871f] justify-between items-center z-[50]" >
+        <div className="py-5 px-[2vmax] flex bg-[#f5871f] justify-between items-center z-[50]">
           <a
             href="/"
-            className=" px-2 flex items-center font-medium  rounded-2xl  ubuntu text-[#f5871f] logo " id="nav_logo"
+            className=" px-2 flex items-center font-medium  rounded-2xl  ubuntu text-[#f5871f] logo "
+            id="nav_logo"
           >
-            <div className="flex items-center space-x-2  " >
+            <div className="flex items-center space-x-2  ">
               <img
                 src={logo}
                 alt="Logo"
@@ -84,7 +85,7 @@ const Navbar3 = () => {
           </a>
           <a
             href="#messages"
-            className=" w-full flex justify-center outline-none rounded-sm px-5"
+            className=" w-full flex justify-center lg:justify-end outline-none rounded-sm px-5"
           >
             <p className="nav_link bg-[#2CA9DD] p-2 px-6 w-fit hover:bg-white rounded-md ">
               ದೂರುಗಳು/ಸಲಹೆಗಳು
