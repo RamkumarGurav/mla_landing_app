@@ -75,7 +75,7 @@ export default function JoinFormModal() {
                   onChange={handleChange}
                   value={messageDetails.email || ""}
                   className="bg-gray-100 border focus:border-2 focus:bg-white border-orange-500 text-gray-900 text-sm md:text-base font-medium rounded-lg placeholder-gray-400 mb-4 focus:outline-none focus:ring-0 focus:border-orange-500 block w-full p-2.5  "
-                  placeholder="ಕೊನೆಯ ಹೆಸರು"
+                  placeholder="ಇಮೇಲ್"
                   required
                 />
               </div>
@@ -103,7 +103,7 @@ export default function JoinFormModal() {
                 type="submit"
                 className="text-white bg-orange-500 hover:bg-orange-400 outline-none focus:ring-0 focus:outline-none  font-medium rounded-lg text-sm md:text-lg  px-5 py-2.5 text-center w-full mt-4 uppercase"
               >
-Submit
+                Submit
               </button>
 
               <AiFillCloseCircle
