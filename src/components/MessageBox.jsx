@@ -63,7 +63,7 @@ const MessageBox = () => {
                 onChange={handleChange}
                 value={messageDetails.last_name || ""}
                 className="bg-gray-100 border focus:border-2 focus:bg-white border-orange-500 text-gray-900 text-sm md:text-base font-medium rounded-lg placeholder-gray-400 focus:outline-none focus:ring-0 focus:border-orange-500 block w-full p-2.5  "
-                placeholder="ಕೊನೆಯ ಹೆಸರು"
+                placeholder="ಇಮೇಲ್"
                 required
               />
             </div>
