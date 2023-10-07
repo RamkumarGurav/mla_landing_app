@@ -51,17 +51,8 @@ const Media = () => {
       date: "01-10-2023",
     },
   ];
-  const images = [
-    "https://media.licdn.com/dms/image/D4D22AQFZpbTvDt_-1A/feedshare-shrink_800/0/1695706899601?e=2147483647&v=beta&t=QdF68zGzqsyaGwwQdPdQsfEXzQ45IcwCHAeWybn9o6I",
-    "https://media.licdn.com/dms/image/D4D22AQFZpbTvDt_-1A/feedshare-shrink_800/0/1695706899601?e=2147483647&v=beta&t=QdF68zGzqsyaGwwQdPdQsfEXzQ45IcwCHAeWybn9o6I",
-    "https://media.licdn.com/dms/image/D4D22AQFZpbTvDt_-1A/feedshare-shrink_800/0/1695706899601?e=2147483647&v=beta&t=QdF68zGzqsyaGwwQdPdQsfEXzQ45IcwCHAeWybn9o6I",
-    "https://media.licdn.com/dms/image/D4D22AQFZpbTvDt_-1A/feedshare-shrink_800/0/1695706899601?e=2147483647&v=beta&t=QdF68zGzqsyaGwwQdPdQsfEXzQ45IcwCHAeWybn9o6I",
-    "https://media.licdn.com/dms/image/D4D22AQFZpbTvDt_-1A/feedshare-shrink_800/0/1695706899601?e=2147483647&v=beta&t=QdF68zGzqsyaGwwQdPdQsfEXzQ45IcwCHAeWybn9o6I",
-    "https://media.licdn.com/dms/image/D4D22AQFZpbTvDt_-1A/feedshare-shrink_800/0/1695706899601?e=2147483647&v=beta&t=QdF68zGzqsyaGwwQdPdQsfEXzQ45IcwCHAeWybn9o6I",
-    "https://media.licdn.com/dms/image/D4D22AQFZpbTvDt_-1A/feedshare-shrink_800/0/1695706899601?e=2147483647&v=beta&t=QdF68zGzqsyaGwwQdPdQsfEXzQ45IcwCHAeWybn9o6I",
-    "https://media.licdn.com/dms/image/D4D22AQFZpbTvDt_-1A/feedshare-shrink_800/0/1695706899601?e=2147483647&v=beta&t=QdF68zGzqsyaGwwQdPdQsfEXzQ45IcwCHAeWybn9o6I",
-    "https://media.licdn.com/dms/image/D4D22AQFZpbTvDt_-1A/feedshare-shrink_800/0/1695706899601?e=2147483647&v=beta&t=QdF68zGzqsyaGwwQdPdQsfEXzQ45IcwCHAeWybn9o6I",
-  ];
+
+  const images = imagesDetails.map((item) => item.src);
 
   const openImageViewer = useCallback((index) => {
     setCurrentImage(index);
