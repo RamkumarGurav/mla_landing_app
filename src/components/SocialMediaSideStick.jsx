@@ -63,7 +63,7 @@ const SocialMediaSideStick = () => {
           />
         </a>
         <a
-          href="https://www.facebook.com/profile.php?id=100063928831528"
+          href="https://twitter.com/jagadeesh_sgbjp"
           className="social_link py-4 px-4 bg-gray-900 "
           target="_blank"
           rel="noreferrer"
@@ -76,7 +76,7 @@ const SocialMediaSideStick = () => {
         </a>
 
         <a
-          href="https://www.facebook.com/profile.php?id=100063928831528"
+          href="https://www.youtube.com/@bjp"
           className="social_link py-4 px-4  rounded-br-xl yt-bg "
           target="_blank"
           rel="noreferrer"
